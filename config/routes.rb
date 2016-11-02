@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'categories/show'
+  get 'categories/show', to: 'categories#show'
 
 
   resources :posts, only: [:index, :show, :new, :create, :edit, :update]
